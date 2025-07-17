@@ -5,3 +5,7 @@
     text-decoration: none;
     list-style: none;
 }
+:root {
+    --primary-color: #001F8F;
+    --secondary-color: #F0A820;
+}
