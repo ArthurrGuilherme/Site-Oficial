@@ -27,7 +27,11 @@
   width: 200px;; /* 5 por vez */
   padding: 10px;
 }
-
+#arrowdown {
+    width: 14% !important; 
+    display: flex;
+    justify-content: center;
+} 
 .card {
   height: 151px !important;
   width: 50% !important;
