@@ -28,6 +28,6 @@
     height: 50vh !important;
 }   
 #arrowdown {
-    width: 100% !important;
+    display: none !important;
 } 
 }
