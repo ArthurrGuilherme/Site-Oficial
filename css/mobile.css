@@ -56,4 +56,8 @@
     #titulo1 {
         margin-top: 1rem !important;
     }
+    .carousel-container {
+    overflow: hidden;
+    max-width: 200px;
+    }
 }
