@@ -11,9 +11,12 @@
     <!--Css-->
         <link rel="stylesheet" href="./css/reset.css">
         <link rel="stylesheet" href="./css/main.css">
+        <link rel="stylesheet" href="./css/mobile.css">
         <link rel="stylesheet" href="./css/shared/header.css">
         <!--Css Api-->
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+            <link rel="stylesheet" href="https://resources.powercrm.com.br/assets/external/css/style.pwrcrm.css" />
+            <script src="https://unpkg.com/scrollreveal"></script> 
         <!--Css Api-->
     <!--Css-->
 </head>
@@ -34,6 +37,7 @@
                 <button class="btn-close btn-close-white m-3" id="closeMenu"></button>
                 <ul class="nav flex-column text-white px-4">
                     <li class="nav-item"><a class="nav-link text-white" href="#">Início</a></li>
+                    <li class="nav-item"><a id="linkGerado" class="nav-link text-white linkArea" target="_blank" href="https://kepler.hinova.com.br/sga/area/v5/auth/f9d0569796381d24b8e153eef4e4b71dcce216aad9f52f72f49b1527dd34bebec7926a9e6bfaa3abdcb73c97dd81e8be70966e8d28e4d9bb27d5321d2fb2e760ea0862ffd9c2373f13193661c3f5ba61">Área do Associado</a></li>
                 </ul>
             </aside>
         <!--Menu Lateral-->
@@ -43,20 +47,20 @@
     <!--Overlay Escuro-->
     <!--Conteudo-->
         <main>
-            <section class="Section-Primary" style="background: url(./img/BG-1-scaled.webp); background-size: cover; background-position: center;" >
-                <article class="container p-5">
-                    <div>
+            <section id="Sessaoprimaria" class="Section-Primary p-5" >
+                <article id="padding" class="container p-5 sessaomobile">
+                    <div id="padding" class="p-3">
                         <span>
-                            <h1 class="" style="line-height: .9; font-size: 3.5rem; color: var(--secondary-color); font-weight: 750;">Você <br>
-                                mais que <br>
-                                protegido! <br>
+                            <h1 id="width" class="w-25 text-titulo" style="line-height: .9; font-size: 3.5rem; color: var(--secondary-color); font-weight: 750;">Você mais
+                                que protegido! 
                             </h1>
-                            <p class="text-white" style="font-size: 1.2rem; line-height: 1.5;">
-                                Garanta agora proteção total com a <br> <strong>VM Brasil</strong> — proteção imediata,<br> benefícios reais e vantagens <br> exclusivas!
+                            <br class="br-mobile">
+                            <p id="width" class="text-white w-50 p-mobile" style="font-size: 1.2rem; line-height: 1.5;">
+                                Garanta agora proteção total com a <strong>VM Brasil</strong> — proteção imediata, benefícios reais e vantagens exclusivas!
                             </p>
-                            <button class="btn btn-primary">Entre em contato</button>
+                            <button class="btn btn-color">Entre em contato</button>
                             <br><br>
-                            <div id="arrowdown">
+                            <div style="width: 14% !important; display: flex; justify-content: center;" id="arrowdown">
                                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="#fff" class="bi bi-arrow-down-circle" viewBox="0 0 16 16">
                                     <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v5.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293z"/>
                                 </svg>
@@ -65,14 +69,428 @@
                     </div>
                 </article>
             </section>
+            <section class="p-5">
+                <article class="container">
+                    <div class="d-flex justify-content-between gap-5 align-items-center">
+                        <span id="Texto" class="w-50">
+                            <h4 style="margin: 0px !important;">Nossa solução</h4>
+                            <h3 style="color: var(--primary-color);">Proteção completa para seu veículo, <br> sem complicação.</h3>
+                            <p style="margin: 0px !important;">Se preoculpe com outras coisas, seu bem está protegido em
+                                caso de roubo, incêndio, perda total, com pagamento em
+                                tempo recorde, 100% tabela Fipe.
+                            </p>
+                            <p>Nosso time é formado por consultores preparados e comprometidos, prontos para oferecer a melhor orientação e atendimento do primeiro contato até o pós-venda. Contamos também com a confiança e representatividade da nossa embaixadora, a apresentadora Jaqueline Cruz, que leva a força da nossa marca para todo o país.</p>
+                            <button class="btn btn-azul">Saiba Mais</button>
+                        </span>
+                        <span class="w-50">
+                            <img class="w-100" style="border-radius: 15px;" src="./img/solucao.png" alt="" srcset="">
+                        </span>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <article class="container">
+                    <div id="titulo">
+                        <span class="text-center">
+                            <h3 style="margin: 0px !important;">Nosso Fundador</h3>
+                            <h4 style="color: var(--primary-color);">Por que você se relaciona com pessoas, não empresas.</h4>
+                        </span>
+                        <br>
+                        <div>
+                            <span class="w-100 d-flex justify-content-center align-items-center flex-column">
+                                <img class="w-25" src="./img/Design sem nome.png" alt="Vando" srcset="">
+                                <span style="margin-top: 1rem;" class="text-center">
+                                    <p style="font-size: 1.5rem; font-weight: 700; margin-bottom: 1px !important;">Vando Matias</p>
+                                    <p class="text-secondary" style="font-size: .9rem; margin-bottom: 1px !important;">Presidente da Associação</p>
+                                    <span>
+                                        <a href="https://www.instagram.com/vando_matias?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" class="text-secondary" target="_blank" rel="noopener noreferrer">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                                                <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                            </svg>
+                                        </a>
+                                    </span>
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <br>
+            <section>
+                <article class="container">
+                    <div>
+                        <span class="text-center">
+                            <h3 style="color: var(--primary-color);">Cobertura Nacional</h3>
+                            <h4>Aqui na <strong>VM BRASIL</strong> você tem cobertura em casos de:</h4>
+                        </span>
+                        <br>
+                        <section class="d-flex justify-content-center align-items-center flex-wrap">
+                                <div class="carousel-container">
+                                    <div class="carousel-track" id="carousel-track">
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/roubo-de-pessoas.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Roubo e
+                                            <br> Furto</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/incendio.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Incêndio
+                                            <br>Por  Colisão</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center  w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/acidente.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">acidente
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/colisao.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Colisão</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/carro-capotado.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Perda
+                                            <br> Total</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/BRASIL.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Cobertura
+                                            <br> Nacional</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/carro-capotado-1-1.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Capotamento</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/24H.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Assistência
+                                            <br>24 Horas</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/GUINCHO.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Guincho para
+                                            <br>Acidente</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/parabrisa.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Vidros,
+                                            <br>Farois e
+                                            <br>Lanternas</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/PRESENTE-AZUL.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Danos a
+                                            <br>Terceiros</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/predio.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Aux.
+                                            <br>Hospedagem</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/taxi.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Táxi
+                                            <br>Emergencial</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/CHAVEIRO.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Auxílio
+                                            <br>Chaveiro</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/carro.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Carro
+                                            <br>Reserva</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/PRESENTE-AZUL.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Aux.Pneu
+                                            <br>Furado</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/parabrisa.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Vidros
+                                            <br>Plus</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/FUNERAL.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Aux.
+                                            <br>Funeral</p>
+                                        </div>
+                                    </div>
+                                    <div class="beneficio-item active">
+                                        <div class="card gap-1 d-flex justify-content-center align-items-center w-100">
+                                            <img style="width: 30% !important;" src="./img/icon/ferramentas.svg" alt="" srcset="">
+                                            <br><br>
+                                            <p style="margin: 0px !important;">Aux.
+                                            <br>Pequenos
+                                            <br>Reparos</p>
+                                        </div>
+                                    </div>
+                                </div>
+                        </section>           
+                        </div>
+                </article>
+            </section>
+            <section class="p-5">
+                <article class="container">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="w-50 d-flex justify-content-center align-items-center">
+                            <img class="w-75" style="border-radius: 15px;" src="./img/IconGramde.webp" alt="" srcset="">
+                        </span>
+                        <span id="Texto"  class="w-50">
+                            <h4 style="margin: 0px !important;">Sobre </h4>
+                            <h3 style="color: var(--primary-color);">VM BRASIL PROTEÇÃO VEICULAR</h3>
+                            <p style="margin: 0px !important;">SA VM Brasil Proteção Veicular é uma associação consolidada no mercado há mais de 6 anos, crescendo com força no Nordeste e conquistando espaço em todo o Brasil. Nascemos com o compromisso de oferecer uma proteção acessível, eficiente e humanizada para quem valoriza segurança e tranquilidade ao dirigir.
+                            </p>
+                            <p  >Com assistência 24 horas e cobertura em todo o território nacional, protegemos carros, motos, caminhões e frotas com seriedade, agilidade e respeito. Nossos serviços incluem proteção contra roubo, furto, colisão, incêndio, danos a terceiros carro reserva e muito mais, sem burocracia e com atendimento de excelência.</p>
+                            <button class="btn btn-azul">Ver Mais</button>
+                        </span>
+                    </div>
+                </article>
+            </section>
+            <!--<section>
+                <article>
+                    <div class="container p-5" style="background: var(--primary-color); border-radius: 15px;">
+                        <span>
+                            <h4 class="text-white">Entre em </h4>
+                            <h2 style="color: var(--secondary-color);">Contato conosco</h2>
+                            <p class="w-50 text-white">Temos uma equipe altamente capacitada para atendê-los, com as melhores soluções personalizadas para o seu negócio.</p>
+                            <a href="http://" class="btn text-white" style="background: var(--secondary-color);" target="_blank" rel="noopener noreferrer">Contato</a>
+                        </span>
+                    </div>
+                </article>
+            </section>-->
+            <section class="Section-Primary p-5" style="background: url(./img/TERRITORIO-NACIONAL-PRETO-1.webp); background-size: cover; background-position: center;" >
+                <article class="container p-5">
+                    <div class="p-3">
+                        <span>
+                            <h1 class="" style="line-height: .9; color: var(--secondary-color); font-weight: 750;">VM Brasil<br>
+                                Proteção Veicular
+                            </h1>
+                            <br>
+                            <p class="text-white" style="font-size: 1.2rem; line-height: 1.5; width: 35%;">
+                                A VM BRASIL segue as diretrizes da SUSEP, garantindo proteção veicular com credibilidade, ética e responsabilidade.
+                            </p>
+                            <div id="contador" class="d-flex flex-column gap-1">
+                                <div class="d-flex gap-5">
+                                    <span>
+                                        <h3 class="counter" data-target="4" data-speed="1000" style="color: var(--secondary-color); margin: 0px !important;">0</h3>
+                                        <p class="text-white">Estados</p>
+                                    </span>
+                                    <span>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <h3 style="color: var(--secondary-color); margin: 0px !important;">+</h3>
+                                            <h3 class="counter" data-target="20" data-speed="150" style="color: var(--secondary-color); margin: 0px !important;">0</h3>
+                                            <h3 style="color: var(--secondary-color); margin: 0px !important;">mil</h3>
+                                        </span>
+                                        <p class="text-white">Associados <br> Ativos</p>
+                                    </span>
+                                </div>
+                                <div class="d-flex gap-5">
+                                    <span>
+                                        <h3 class="counter" data-target="100" data-speed="32" data-suffix="%" style="color: var(--secondary-color); margin: 0px !important;">0%</h3>
+                                        <p class="text-white">Peças <br> Originais</p>
+                                    </span>
+                                    <span>
+                                        <span class="d-flex align-items-center gap-1">
+                                            <h3 style="color: var(--secondary-color); margin: 0px !important;">+</h3>
+                                            <h3 class="counter" data-target="100" data-speed="32" style="color: var(--secondary-color); margin: 0px !important;">0</h3>
+                                        </span>
+                                        <p class="text-white">Produtos <br> Entregues</p>
+                                    </span>
+                                </div>
+                            </div>
+                        </span>
+                    </div>
+                </article>
+            </section>
+            <section>
+                <article class="container">
+                   <div class="d-flex justify-content-end align-items-end flex-column">
+                        <span class="d-flex align-items-center flex-column">
+                            <h1>Estamos aqui por você!</h1>
+                            <p class="text-center">Mande sua mensagem e responderemos o quanto antes.</p>
+                            <section id="pwrcrm"><form id="pwrcrmform"><input type="hidden" value="vm br4sil706" id="pwrCmpnHsh" name="pwrCmpnHsh"><input type="hidden" value="dG99n2GZ" id="pwrFrmCode" name="pwrFrmCode"><input type="hidden" value="1" id="pwrPplnClmn" name="pwrPplnClmn"><input type="hidden" value="9956" id="pwrLdSrc" name="pwrLdSrc"><div class="pwrcrmInputCont"><label for="pwrClntNm">Nome<strong></strong></label><input type="text" required="required" id="pwrClntNm" name="pwrClntNm"></div><div class="pwrcrmInputCont"><label for="pwrCltPhn">Telefone<strong></strong></label><input type="tel" required="required" placeholder="(_) __-__" maxlength="11" class="phone_mask" id="pwrCltPhn" name="pwrCltPhn"></div><div class="pwrcrmInputCont"><label for="pwrClntMl">E-mail<strong></strong></label><input type="email" required="required" id="pwrClntMl" name="pwrClntMl"></div><div class="pwrcrmInputCont"><label for="pwrStt">Estado<strong></strong></label><select required="required" id="pwrStt" name="pwrStt"><option value="0">Selecione o estado</option></select></div><div class="pwrcrmInputCont"><label for="pwrCt">Cidade<strong>*</strong></label><select required="required" id="pwrCt" name="pwrCt"><option value="0">Selecione a cidade</option></select></div><button type="submit">Salvar</button></form></section>
+                        </span>
+                    </div>
+                </article>
+            </section>
         </main>
     <!--Conteudo-->
+    <br>
+    <!--Footer-->
+        <footer style="background: var(--primary-color);">
+            <article class="container d-flex justify-content-between">...</div>
+                <div class="d-flex justify-content-center p-5">
+                    <div class="d-flex flex-column w-50 gap-3">
+                        <span class="w-100">
+                            <img class="w-100" src="./img/logo.png" alt="" srcset="">
+                        </span>
+                        <span>
+                            <p class="text-white" style="font-size: 1.2rem; line-height: 1.5;">
+                                A VM BRASIL é uma associação de proteção veicular que atua com ética, responsabilidade e compromisso, oferecendo soluções personalizadas para a proteção do seu veículo.    
+                            </p>
+                        </span>
+                    </div>
+                    <div class="text-white d-flex gap-2 flex-column align-items-center w-50">
+                        <span>
+                            <h4>Redes Sociais:</h4>
+                        </span>
+                        <span class="d-flex gap-3 justify-content-center align-items-center">
+                            <a style="background: var(--secondary-color);" class="p-3 rounded-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#ffff" class="bi bi-instagram" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                </svg>
+                            </a>
+                            <a style="background: var(--secondary-color);" class="p-3 rounded-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#ffff" class="bi bi-tiktok" viewBox="0 0 16 16">
+                                    <path d="M9 0h1.98c.144.715.54 1.617 1.235 2.512C12.895 3.389 13.797 4 15 4v2c-1.753 0-3.07-.814-4-1.829V11a5 5 0 1 1-5-5v2a3 3 0 1 0 3 3z"/>
+                                </svg>
+                            </a>
+                            <a style="background: var(--secondary-color);" class="p-3 rounded-circle">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="#ffff" class="bi bi-facebook" viewBox="0 0 16 16">
+                                    <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                                </svg>
+                            </a>
+                        </span>
+                    </div>
+            </article>
+            <article>
+
+            </article>
+        </footer>
+    <!--Footer-->
 
 </body>
 <!--Js-->
+<script>
+    const counters = document.querySelectorAll('.counter');
+    let started = false;
+
+    function startCounters() {
+        counters.forEach(counter => {
+            const target = +counter.getAttribute('data-target');
+            const suffix = counter.getAttribute('data-suffix') || '';
+            const speed = +counter.getAttribute('data-speed') || 30;
+
+            let count = 0;
+            const increment = Math.max(1, Math.ceil(target / 100));
+
+            const updateCount = () => {
+                if (count < target) {
+                    count += increment;
+                    if (count > target) count = target;
+                    counter.innerText = `${count}${suffix}`;
+                    setTimeout(updateCount, speed);
+                } else {
+                    counter.innerText = `${target}${suffix}`;
+                }
+            };
+
+            updateCount();
+        });
+    }
+
+    const observer = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting && !started) {
+                startCounters();
+                started = true;
+                observer.disconnect(); // parar de observar depois que iniciou
+            }
+        });
+    }, {
+        threshold: 0.4 // 40% da div visível já ativa
+    });
+
+    const section = document.querySelector('#contador');
+    observer.observe(section);
+</script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const track = document.getElementById('carousel-track');
+    const items = Array.from(track.children);
+    const itemWidth = items[0].offsetWidth;
+    let index = 0;
+
+    // Duplica os itens para loop infinito
+    items.forEach(item => {
+      const clone = item.cloneNode(true);
+      track.appendChild(clone);
+    });
+
+    setInterval(() => {
+      index++;
+      track.style.transition = 'transform 0.5s ease-in-out';
+      track.style.transform = `translateX(-${itemWidth * index}px)`;
+
+      if (index >= items.length) {
+        setTimeout(() => {
+          track.style.transition = 'none';
+          track.style.transform = 'translateX(0)';
+          index = 0;
+        }, 50);
+      }
+    }, 2000);
+  });
+</script>
+    <script src="./js/scrollrevel.js"></script>
     <script src="./js/header.js"></script>
     <!--Js Api-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://resources.powercrm.com.br/assets/external/js/script.pwrcrm.js"></script>
     <!--Js Api-->
 <!--Js-->
 </html>

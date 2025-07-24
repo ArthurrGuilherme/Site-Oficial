@@ -1,0 +1,47 @@
+#Sessaoprimaria {
+    background: url(../img/BG-1-scaled.webp);
+    background-size: cover;
+    background-position: center;
+}
+.btn-color {
+    background: var(--secondary-color) !important;
+    color: white !important;
+}
+.btn-azul {
+    background: var(--primary-color) !important;
+    color: white !important;
+}
+
+.carousel-container {
+  overflow: hidden;
+  max-width: 1000px;
+}
+
+.carousel-track {
+  display: flex;
+  width: fit-content;
+  transition: transform 0.5s ease-in-out;
+}
+
+.beneficio-item {
+  width: 200px;; /* 5 por vez */
+  padding: 10px;
+}
+
+.card {
+  height: 151px !important;
+  width: 50% !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  flex-direction: row !important;
+  background: #FF5D18 !important;
+}
+.card p {
+  color: white !important;
+  font-size: 1rem;
+  line-height: 1.3;
+  text-align: center;
+  font-weight: 700;
+}

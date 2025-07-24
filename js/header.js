@@ -20,3 +20,4 @@ overlay.addEventListener('click', () => {
   sideMenu.classList.remove('open');
   overlay.classList.remove('show');
 });
+
