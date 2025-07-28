@@ -16,7 +16,9 @@
   overflow: hidden;
   max-width: 1000px;
 }
-
+#imgmobile {
+  display: none !important;
+}
 .carousel-track {
   display: flex;
   width: fit-content;

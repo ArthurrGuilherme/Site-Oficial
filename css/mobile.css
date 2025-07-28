@@ -48,6 +48,7 @@
     }
     #imgmobile {
         width: 100% !important;
+        display: block !important;
     }
     #imgvando {
         width: 94% !important;
@@ -57,8 +58,8 @@
         margin-top: 1rem !important;
     }
     .carousel-container {
-    overflow: hidden;
-    max-width: 200px;
+        overflow: hidden;
+        max-width: 200px;
     }
     #Footersessao {
         flex-direction: column;
@@ -77,5 +78,8 @@
     }
     #Padding01 {
         padding: 2rem !important;
+    }
+    #imgdesktop {
+        display: none !important;
     }
 }
