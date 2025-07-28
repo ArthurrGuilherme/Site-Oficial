@@ -60,4 +60,7 @@
     overflow: hidden;
     max-width: 200px;
     }
+    #Footersessao {
+        flex-direction: column;
+    }
 }
