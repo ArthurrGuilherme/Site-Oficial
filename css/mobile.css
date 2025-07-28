@@ -62,5 +62,20 @@
     }
     #Footersessao {
         flex-direction: column;
+        padding: 0px !important;
+        align-items: center;
+        text-align: center;
+    }
+    #flex1 {
+        flex-direction: column-reverse !important;
+        align-items: center !important;
+        margin-top: 1rem !important;
+        gap: 1rem !important;
+    }
+    #Numeros {
+        display: none !important;
+    }
+    #Padding01 {
+        padding: 2rem !important;
     }
 }
