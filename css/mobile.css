@@ -74,13 +74,20 @@
         margin-top: 1rem !important;
         gap: 1rem !important;
     }
-    #Numeros {
-        display: none !important;
-    }
     #Padding01 {
         padding: 2rem !important;
     }
     #imgdesktop {
         display: none !important;
+    }
+    #Textnumeros {
+        width: 100% !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #Numeros {
+        background: none !important;
+        width: 100% !important;
     }
 }
